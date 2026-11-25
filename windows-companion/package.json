@@ -1,0 +1,19 @@
+{
+  "name": "judgeme-chatgpt-windows-companion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "electron ."
+  },
+  "main": "dist/main.js",
+  "dependencies": {
+    "@siwc/local": "file:../../sign-in-with-chatgpt-devkit/packages/local"
+  },
+  "devDependencies": {
+    "electron": "^42.0.0",
+    "typescript": "^5.8.0",
+    "@types/node": "^22.0.0"
+  }
+}
