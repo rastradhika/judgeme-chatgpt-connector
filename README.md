@@ -1,6 +1,8 @@
 # Judge.Me ChatGPT Connector (Windows-first, Android-ready)
 
-A separate integration project for connecting Judge.Me to Sign in with ChatGPT. This repository must never contain Judge.Me core source, case data, judicial documents, database backups, or credentials.
+A separate public integration project for connecting Judge.Me to Sign in with ChatGPT. This repository contains connector code and documentation only.
+
+**Public repository boundary:** this repository must never contain Judge.Me core source, case data, judicial documents, database backups, or credentials. Those remain private on the user's Judge.Me server.
 
 ## Architecture
 
@@ -10,7 +12,7 @@ A separate integration project for connecting Judge.Me to Sign in with ChatGPT. 
 
 ## Current status
 
-The repository currently contains architecture and security scaffolding only. There is no working OAuth flow, no credential transfer implementation, and no active ChatGPT connection yet. No API request has been made.
+The repository includes architecture and Windows companion scaffolding. The OAuth flow, credential transfer, server endpoints, and AI processing integration are not yet complete. No ChatGPT account is connected and no document has been sent to an external AI service.
 
 ## Security rules
 
@@ -19,7 +21,7 @@ The repository currently contains architecture and security scaffolding only. Th
 3. Keep credentials out of browser JavaScript and Android clients.
 4. Require explicit user consent before sending any case document to an external AI service.
 5. Test with synthetic documents first. Obtain applicable institutional authorization before processing judicial records externally.
-6. Review OpenAI DevKit licensing before copying or redistributing any DevKit code. This repository references the SDK; it does not vendor it.
+6. Review and comply with the upstream DevKit license; this repository references the SDK and does not vendor it.
 
 ## Official references
 
