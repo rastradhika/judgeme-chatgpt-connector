@@ -60,7 +60,7 @@ app.whenReady().then(async () => {
   installIpc();
   window = new BrowserWindow({
     width: 560, height: 520, minWidth: 480, minHeight: 420,
-    webPreferences: { preload: join(import.meta.dirname, "preload.js"), contextIsolation: true, nodeIntegration: false, sandbox: true },
+    webPreferences: { preload: join(import.meta.dirname, "preload.cjs"), contextIsolation: true, nodeIntegration: false, sandbox: true },
   });
   await window.loadFile(join(import.meta.dirname, "../ui/index.html"));
   await publish();
